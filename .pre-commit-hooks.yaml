@@ -15,11 +15,13 @@
 - id: npm-update
   name: "npm update"
   entry: ./hook.sh
+  language: script
   pass_filenames: false
   args: ['update']
 
 - id: npm-audit
   name: "npm audit"
   entry: ./hook.sh
+  language: script
   pass_filenames: false
   args: ['audit']
