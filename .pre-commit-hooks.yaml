@@ -1,7 +1,25 @@
 - id: npm
   name: npm
-  description: Run NPM command
   entry: ./hook.sh
   language: script
   pass_filenames: false
   args: []
+
+- id: npm-install
+  name: "npm install"
+  entry: ./hooks.sh
+  language: script
+  pass_filenames: false
+  args: [ 'install' ]
+
+- id: npm-update
+  name: "npm update"
+  entry: ./hook.sh
+  pass_filenames: false
+  args: ['update']
+
+- id: npm-audit
+  name: "npm audit"
+  entry: ./hook.sh
+  pass_filenames: false
+  args: ['audit']
